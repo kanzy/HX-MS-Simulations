@@ -1,0 +1,14 @@
+2009-12-27 v1.0:
+the main program is phxsim.m
+
+
+2010-01-03 v1.0.5:
+try to write MEX-file(.c => .mexw32) to replace the simulation loops part in phxsim_sim.m: able to run but give wrong distribution, maybe because of the random number generator problem.
+
+
+2010-01-04 phxsim2 try:
+try replacing Mont Carlo by Diff Equations simulation, but seems not working
+
+
+2010-01-04 v1.0.6:
+fix some mistakes in v1.0.5, but still have problem.

@@ -1,0 +1,54 @@
+Dec27 phxsim test runs:
+
+START=77;
+END=90;
+
+
+#1 & repeat:
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e2, 1, 1e3, 1e3, 1e3, 1e2, 1e1, 1e2];
+pf_I(77:90)=[1,   1,   1, 1, 1, 1,   1, 1, 1e1, 1e2, 1e3, 1e2, 1e1, 1e2];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+
+#2:
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e2, 1, 1e2, 1e2, 1e2, 1e2, 1e1, 1e2];
+pf_I(77:90)=[1,   1,   1, 1, 1, 1,   1, 1, 1e1, 1e2, 1e2, 1e2, 1e1, 1e2];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+#3:
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e1, 1, 1e2, 1e2, 1e2, 1e2, 1e1, 1e1];
+pf_I(77:90)=[1,   1,   1, 1, 1, 1,   1, 1, 1e1, 1e2, 1e2, 1e1, 1e1, 1e1];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+#4:
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e1, 1, 1e2, 1e2, 1e2, 1e2, 1e2, 1e2];
+pf_I(77:90)=[1, 1e1,   1, 1, 1, 1,   1, 1, 1e1, 1e1, 1e1, 1e1, 1e1, 1e1];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+#5:
+pf_N(77:90)=[1, 1e4, 1e4, 1, 1, 1, 1e4, 1, 1e4, 1e4, 1e4, 1e4, 1e4, 1e4];
+pf_I(77:90)=[1, 1e1,   1, 1, 1, 1,   1, 1, 1e3, 1e3, 1e3, 1e3, 1e3, 1e3];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+#6: same with #4, simulate the quench phase(10min@4'C = 1sec@73'C)
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e1, 1, 1e2, 1e2, 1e2, 1e2, 1e2, 1e2];
+pf_I(77:90)=[1, 1e1,   1, 1, 1, 1,   1, 1, 1e1, 1e1, 1e1, 1e1, 1e1, 1e1];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+#7: same with #4, simulate the quench phase(10min@4'C = 30sec@33'C)
+pf_N(77:90)=[1, 1e1, 1e1, 1, 1, 1, 1e1, 1, 1e2, 1e2, 1e2, 1e2, 1e2, 1e2];
+pf_I(77:90)=[1, 1e1,   1, 1, 1, 1,   1, 1, 1e1, 1e1, 1e1, 1e1, 1e1, 1e1];
+pf_Ix=pf_I; %assume I & Ix have the same protection factors
+
+
+
+
+
+
+
+
+
+
+
+
+
